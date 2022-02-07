@@ -1,1 +1,11 @@
-
+gcc -g p2original.c
+ ./a.out
+enter the  sides of the triange4
+enter the  sides of the triange5
+enter the  sides of the triange6
+is scalene 
+ ./a.out
+enter the  sides of the triange4
+enter the  sides of the triange4
+enter the  sides of the triange5
+not scalene
