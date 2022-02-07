@@ -1,5 +1,5 @@
 gcc -g p1original.c;
- ./a.out
+./a.out
 enter the base of the triangle
 1
 enter the height of the triangle
