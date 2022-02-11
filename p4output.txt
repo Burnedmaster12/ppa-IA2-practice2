@@ -1,1 +1,7 @@
-
+gcc -g p4original.c;
+./a.out;
+enter the size of an array
+3
+enter the numbers12
+23
+34the sum is 69
