@@ -23,7 +23,7 @@ void output(int n,int count){
   }
   
 }
-void main(){
+int main(){
   int n,count;
   n=input_number();
   count=is_composite(n);
