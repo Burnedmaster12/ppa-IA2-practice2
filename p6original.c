@@ -10,7 +10,7 @@ int string_length(char *str)
   int n;
   for (n = 0; str[n]; n++);
   return n;
-}
+} 
 
 void string_copy(char *d, char *s)
 {

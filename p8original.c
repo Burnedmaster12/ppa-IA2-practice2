@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-typedef struct _triangle
+struct _triangle
 {
   float base, altitude, area;
-} Triangle;
+};
+typedef struct _triangle Triangle;
 
 int input_n()
 {
@@ -16,15 +17,14 @@ int input_n()
 Triangle input_triangle()
 {
   Triangle t;
-  printf("Enter the base, altitude of a triangle:\n")
-;
+  printf("Enter the base, altitude of a triangle:\n");
   scanf("%f%f", &t.base, &t.altitude);
   return t;
 }
 
 void input_n_triangles(int n, Triangle t[n])
 {
-  for (int i = 0; i < n; i++)
+  for (int i=0;i<n;i++)
   {
     t[i] = input_triangle();
   }
@@ -35,9 +35,9 @@ void find_area(Triangle *t)
   t->area = 0.5 * t->base * t->altitude;
 }
 
-void find_areas(int n, Triangle t[n])
+void find_areas(int n,Triangle t[n])
 {
-  for (int i = 0; i < n; i++)
+  for (int i=0;i<n;i++)
   {
     find_area(&t[i]);
   }
@@ -60,7 +60,7 @@ Triangle find_smallest_triangle(int n, Triangle t[n])
 
 void output(int n, Triangle t[n], Triangle smallest)
 {
-  for (int i = 0; i < n - 1; i++)
+  for(int i=0;i<n-1;i++)
   {
     printf("%f, %f and\n", t[i].base, t[i].altitude);
   }
